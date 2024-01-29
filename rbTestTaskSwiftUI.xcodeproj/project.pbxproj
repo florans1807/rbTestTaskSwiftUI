@@ -14,6 +14,11 @@
 		4AB328FA2B626375008F4377 /* rbTestTaskSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB328F92B626375008F4377 /* rbTestTaskSwiftUITests.swift */; };
 		4AB329042B626375008F4377 /* rbTestTaskSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB329032B626375008F4377 /* rbTestTaskSwiftUIUITests.swift */; };
 		4AB329062B626375008F4377 /* rbTestTaskSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB329052B626375008F4377 /* rbTestTaskSwiftUIUITestsLaunchTests.swift */; };
+		4AB329152B6264B0008F4377 /* BetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB329142B6264B0008F4377 /* BetCell.swift */; };
+		4AB3291B2B62802F008F4377 /* AverageDiagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3291A2B62802F008F4377 /* AverageDiagram.swift */; };
+		4AB3291F2B62C365008F4377 /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB3291E2B62C365008F4377 /* DiagramView.swift */; };
+		4AB329212B639438008F4377 /* PercentageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB329202B639438008F4377 /* PercentageView.swift */; };
+		4AB329232B639757008F4377 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB329222B639757008F4377 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		4AB328FF2B626375008F4377 /* rbTestTaskSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rbTestTaskSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB329032B626375008F4377 /* rbTestTaskSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rbTestTaskSwiftUIUITests.swift; sourceTree = "<group>"; };
 		4AB329052B626375008F4377 /* rbTestTaskSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rbTestTaskSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AB329142B6264B0008F4377 /* BetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetCell.swift; sourceTree = "<group>"; };
+		4AB3291A2B62802F008F4377 /* AverageDiagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageDiagram.swift; sourceTree = "<group>"; };
+		4AB3291E2B62C365008F4377 /* DiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
+		4AB329202B639438008F4377 /* PercentageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageView.swift; sourceTree = "<group>"; };
+		4AB329222B639757008F4377 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +104,9 @@
 		4AB328E72B626371008F4377 /* rbTestTaskSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4AB329252B63F592008F4377 /* Views */,
+				4AB329242B63F582008F4377 /* Resourses */,
 				4AB328E82B626371008F4377 /* rbTestTaskSwiftUIApp.swift */,
-				4AB328EA2B626371008F4377 /* ContentView.swift */,
-				4AB328EC2B626374008F4377 /* Assets.xcassets */,
 				4AB328EE2B626374008F4377 /* Preview Content */,
 			);
 			path = rbTestTaskSwiftUI;
@@ -125,6 +135,27 @@
 				4AB329052B626375008F4377 /* rbTestTaskSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = rbTestTaskSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		4AB329242B63F582008F4377 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				4AB328EC2B626374008F4377 /* Assets.xcassets */,
+				4AB329222B639757008F4377 /* Extensions.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		4AB329252B63F592008F4377 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AB328EA2B626371008F4377 /* ContentView.swift */,
+				4AB3291A2B62802F008F4377 /* AverageDiagram.swift */,
+				4AB3291E2B62C365008F4377 /* DiagramView.swift */,
+				4AB329142B6264B0008F4377 /* BetCell.swift */,
+				4AB329202B639438008F4377 /* PercentageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB328EB2B626371008F4377 /* ContentView.swift in Sources */,
+				4AB3291B2B62802F008F4377 /* AverageDiagram.swift in Sources */,
+				4AB329212B639438008F4377 /* PercentageView.swift in Sources */,
+				4AB329232B639757008F4377 /* Extensions.swift in Sources */,
+				4AB3291F2B62C365008F4377 /* DiagramView.swift in Sources */,
 				4AB328E92B626371008F4377 /* rbTestTaskSwiftUIApp.swift in Sources */,
+				4AB329152B6264B0008F4377 /* BetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

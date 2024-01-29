@@ -9,6 +9,10 @@ import SwiftUI
 
 struct AverageDiagram: View {
     let rates: [Double]
+    var widthsOfLines: [Double] {
+        let maxValue = rates.max()! + 1
+        return rates.map { $0 / maxValue }
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 30) {
@@ -20,9 +24,9 @@ struct AverageDiagram: View {
             HStack {
                 
                 VStack(spacing: 35) {
-                    DiagramView(color: .green)
-                    DiagramView(color: .red)
-                    DiagramView(color: .gray)
+                    DiagramView(color: .green, widthRatio: widthsOfLines[0])
+                    DiagramView(color: .red, widthRatio: widthsOfLines[1])
+                    DiagramView(color: .gray, widthRatio: widthsOfLines[2])
                 }
                 
                 VStack(spacing: 20) {
@@ -52,7 +56,7 @@ struct ResultView: View {
         
             Spacer()
             
-            Text(rate.formatted())
+            Text(String(format:"%.2f", rate))
                 .font(.system(size: 20))
                 .bold()
         }

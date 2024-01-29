@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DiagramView: View {
     let color: Color
+    let widthRatio: Double
     @State var size: CGSize = .zero
     
     var body: some View {
@@ -22,11 +23,11 @@ struct DiagramView: View {
             }
             RoundedRectangle(cornerRadius: 1.0)
                 .fill(color)
-                .frame(width: size.width * 0.75)
+                .frame(width: size.width * widthRatio)
         }.frame(height: 10)
     }
 }
 
 #Preview {
-    DiagramView(color: .red)
+    DiagramView(color: .red, widthRatio: 0.75)
 }
